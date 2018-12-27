@@ -13,9 +13,10 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
-
+% pred is the hypothesis
     pred = X*theta;
     sq = (pred - y).^2;
+% J is the cost , in otherwards, a measure of how accurate the hypothesis is
     J = (sum(sq)/(2*m)); 
 
 
